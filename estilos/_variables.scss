@@ -1,0 +1,32 @@
+/*======Colores=======*/
+$naranja: #FF4D00;
+$blanco: #F4F6F7;
+$azul: #003EFF;
+
+/*======ANIMACIONES=======*/
+$tiempo: .3s ease all;
+
+
+/*======MEDIDAS=======*/
+$cuadrado: 50px;
+$colores: 33%;
+
+/*======TIPOGRAFIA=======*/
+@font-face{
+    font-family: 'fuente1';
+    src: url('../fuentes/Bubblegum.ttf');
+}
+@font-face{
+    font-family: 'fuente2';
+    src: url('../fuentes/GOOD\ PEOPLE.otf');
+}
+@font-face{
+    font-family: 'fuente3';
+    src: url('../fuentes/Youtube\ Star.ttf');
+}
+
+$goma: 'fuente1';
+$good: 'fuente2';
+$yutub: 'fuente3';
+
+$titulos: 'Times New Roman';

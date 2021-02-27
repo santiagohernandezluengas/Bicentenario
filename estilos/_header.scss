@@ -1,0 +1,116 @@
+.navegacion {
+    box-shadow: 60px -16px teal;
+    height: 250px;
+    width: 100%;
+    flex: content;
+    position: fixed;
+    position: relative;
+    opacity: 0.7;
+    background-image: url("../img/colegio1.jpg");
+    .tituloYescudo {
+        width: 100%;
+        justify-content: space-around;
+        display: inline;
+        background-color: $blanco;
+        .escudo {
+            top: 20px;
+            left: 20px;
+            float: left;
+            img {
+                width: 150px;
+            }
+            position: absolute;
+        }
+        h1 {
+            width: 32%;
+            position: absolute;
+            float: left;
+            top: 60px;
+            left: 180px;
+            font-size: 60px;
+            font-family: "fuente2";
+        }
+    }
+    .nav {
+        width: 100%;
+        padding: 7px 0px;
+        position: absolute;
+        float: right;
+        right: 0px;
+        bottom: 0px;
+        font-size: 12px;
+        font-family: "fuente2";
+        height: 40px;
+        background-color: rgba(250, 250, 250, 0.7);
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        text-align: right;
+        body.dark &{
+            background-color: rgba(10, 10, 10, 0.5);
+        }
+    }
+    ul {
+        li {
+            margin: 0px;
+            padding: 1px 8px;
+            list-style: none;
+            font-size: 20px;
+            justify-content: space-between;
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: $azul;
+                &:hover {
+                    color: $naranja;
+                }
+            }
+            button {
+                background: none;
+                font-size: 17px;
+                font-family: "fuente2";
+                &:hover {
+                    color: $naranja;
+                }
+            }
+            .switch {
+                background: $azul;
+                border-radius: 1000px;
+                border: none;
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                outline: none;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    background: #f1f1f1;
+                    top: 0px;
+                    left: 0px;
+                    right: unset;
+                    border-radius: 100px;
+                    transition: 0.3s ease all;
+                    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+                }
+                &.active {
+                    background: $naranja;
+                    color: #000;
+                    &::after {
+                        left: unset;
+                        right: 0px;
+                    }
+                }
+                span {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    display: block;
+                    background: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

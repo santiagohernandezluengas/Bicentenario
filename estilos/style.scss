@@ -1,0 +1,25 @@
+@import "./variables";
+@import "./header";
+@import "./main";
+@import "./footer";
+@import "./formulario-log";//Formulario-login//
+@import "./formulario-reg";//Formulario-registro//
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    scroll-behavior: smooth;
+    transition: $tiempo;
+    background: $blanco;
+    transition: $tiempo;
+    &.dark {
+        transition: $tiempo;
+        opacity: 0.7;
+        background: #000;
+    }
+}

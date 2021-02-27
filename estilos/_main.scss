@@ -1,0 +1,94 @@
+.informacion {
+    padding: 40px;
+    height: 640px;
+    background-color: $naranja;
+    position: relative;
+    body.dark & {
+        background-color: $azul;
+    }
+    .texto {
+        padding: 10px;
+        background-color: rgba(250, 250, 250, 0.5);
+        width: 70%;
+        font-size: 20px;
+        position: absolute;
+        transition: $tiempo;
+        body.dark & {
+            background-color: rgba(10, 10, 10, 0.4);
+            color: $blanco;
+            &:hover{
+                background-color: rgba(10,10,10,0.6);
+            }
+        }
+        &:hover {
+            transition: $tiempo;
+            transform: scale(1.05);
+            background-color: rgba(250, 250, 250, 0.8);
+        }
+        p {
+            width: 50%;
+            position: absolute;
+            top: 35px;
+        }
+        h3 {
+            width: 50%;
+            position: absolute;
+        }
+        img {
+            width: 400px;
+            float: right;
+        }
+    }
+    .texto-rigt {
+        top: 350px;
+        right: 40px;
+        padding: 10px;
+        background-color: rgba(250, 250, 250, 0.5);
+        width: 70%;
+        font-size: 20px;
+        position: absolute;
+        transition: $tiempo;
+        body.dark & {
+            background-color: rgba(10, 10, 10, 0.4);
+            color: $blanco;
+            &:hover{
+                background-color: rgba(10,10,10,0.6);
+            }
+        }
+        &:hover {
+            transition: $tiempo;
+            transform: scale(1.05);
+            background-color: rgba(250, 250, 250, 0.8);
+        }
+        p {
+            width: 50%;
+            position: absolute;
+            top: 35px;
+        }
+        h3 {
+            width: 50%;
+            position: absolute;
+        }
+        img {
+            width: 400px;
+            float: right;
+        }
+    }
+}
+
+
+.tarjetas {
+    background-color: $azul;
+    display: subgrid;
+    body.dark &{
+        background-color: $naranja;
+    }
+    .card {
+        background-color: royalblue;
+        position: relative;
+        .card-boy{
+            float: right;
+            position: absolute;
+        }
+    }
+}

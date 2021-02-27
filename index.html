@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="img/iconos/fonts/style.css">
+    <title>Bicentenario</title>
+</head>
+
+<body>
+    <!--Inicia el header-->
+    <header>
+        <section class="navegacion">
+            <div class="tituloYescudo">
+                <div class="escudo">
+                    <img src="img/Logo.png" alt="colegio-escudo">
+                </div>
+                <h1>IET Bicentenario</h1>
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <button class="switch" id="switch">
+                                <span class="icon-sun icon"></span>
+                                <span class="icon-moon icon"></span>
+                            </button>
+                        </li>
+                        <li><a href="index.html"><span class="icon-home icon"></span></a></li>
+                        <li><a href="#colegio">Acerca del colegio</a></li>
+                        <li><a href="#sedes">Sedes</a></li>
+                        <li><button class="registro" id="registro"><a href="">Registrarse</button></a></li>
+                        <li><button class="login" id="login"><a href="">Iniciar sesión</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <!--Finaliza el header-->
+
+    <!--Inicia el Main-->
+    <main>
+        <!--Seccion informacion-->
+        <section class="informacion" id="colegio">
+            <article class="texto">
+                <h3>Colegio</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolore sequi animi inventore et
+                    similique blanditiis. Aut dolor debitis, mollitia totam assumenda modi natus ea sed doloribus quidem
+                    repellendus dolorem!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsam obcaecati cum eum molestiae, ex
+                    
+                </p>
+                <img src="img/colegio1.jpg" alt="colegio">
+            </article>
+            <article class="texto-rigt">
+                <h3>Colegio</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolore sequi animi inventore et
+                    similique blanditiis. Aut dolor debitis, mollitia totam assumenda modi natus ea sed doloribus quidem
+                    repellendus dolorem!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsam obcaecati cum eum molestiae, ex
+                    
+                </p>
+                <img src="img/colegio1.jpg" alt="colegio">
+            </article>
+        </section>
+        <!--Seccion carrusel-->
+        <section class="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/colegio2.jpg" class="d-block w-100" alt="colegio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/colegio2.jpg" class="d-block w-100" alt="colegio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/colegio2.jpg" class="d-block w-100" alt="colegio">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="icon-point-left icon-hand" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="icon-point-right icon-hand" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!--Seccion Tarjetas-->
+        <section class="tarjetas" id="sedes">
+            <div class="cajon-tarjetas">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/colegio1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bicentenario</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/colegio1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">San Andrés</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/colegio1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">San Andrés</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Finaliza el Main-->
+    <!--Inicia el Footer-->
+    <footer>
+        <div class="footer">
+            <div class="legend">
+                <span>Lorem ipsum dolor, sit amet consectetur </span>
+                <span>Derechos reservados ©</span>
+            </div>
+        </div>
+    </footer>
+    <!--Finaliza el footer-->
+</body>
+<!--Scripts-->
+<script src="js/dark-mode.js"></script>
+
+</html>
