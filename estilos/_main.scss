@@ -79,13 +79,12 @@
 
 .tarjetas {
     background-color: $azul;
-    display: subgrid;
+    position: relative;
     body.dark &{
         background-color: $naranja;
     }
     .card {
         background-color: royalblue;
-        position: relative;
         .card-boy{
             float: right;
             position: absolute;

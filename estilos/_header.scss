@@ -42,10 +42,8 @@
         font-family: "fuente2";
         height: 40px;
         background-color: rgba(250, 250, 250, 0.7);
-        border-bottom-left-radius: 5px;
-        border-top-left-radius: 5px;
         text-align: right;
-        body.dark &{
+        body.dark & {
             background-color: rgba(10, 10, 10, 0.5);
         }
     }

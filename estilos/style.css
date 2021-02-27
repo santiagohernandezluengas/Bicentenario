@@ -71,8 +71,6 @@
   font-family: "fuente2";
   height: 40px;
   background-color: rgba(250, 250, 250, 0.7);
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
   text-align: right;
 }
 
@@ -259,7 +257,7 @@ body.dark .informacion .texto-rigt:hover {
 
 .tarjetas {
   background-color: #003EFF;
-  display: subgrid;
+  position: relative;
 }
 
 body.dark .tarjetas {
@@ -268,7 +266,6 @@ body.dark .tarjetas {
 
 .tarjetas .card {
   background-color: royalblue;
-  position: relative;
 }
 
 .tarjetas .card .card-boy {
