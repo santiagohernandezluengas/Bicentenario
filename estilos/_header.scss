@@ -22,6 +22,7 @@
             position: absolute;
         }
         h1 {
+            color: #000;
             width: 32%;
             position: absolute;
             float: left;
@@ -29,6 +30,9 @@
             left: 180px;
             font-size: 60px;
             font-family: "fuente2";
+            body.dark & {
+                color: #fff;
+            }
         }
     }
     .nav {
