@@ -4,7 +4,7 @@ $blanco: #F4F6F7;
 $azul: #003EFF;
 
 /*======ANIMACIONES=======*/
-$tiempo: .3s ease all;
+$tiempo: .5s ease all;
 
 
 /*======MEDIDAS=======*/
@@ -12,6 +12,7 @@ $cuadrado: 50px;
 $colores: 33%;
 
 /*======TIPOGRAFIA=======*/
+
 @font-face{
     font-family: 'fuente1';
     src: url('../fuentes/Bubblegum.ttf');
@@ -28,5 +29,4 @@ $colores: 33%;
 $goma: 'fuente1';
 $good: 'fuente2';
 $yutub: 'fuente3';
-
 $titulos: 'Times New Roman';

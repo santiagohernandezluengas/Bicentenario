@@ -25,10 +25,11 @@
   -webkit-box-flex: content;
       -ms-flex: content;
           flex: content;
-  position: fixed;
   position: relative;
-  opacity: 0.7;
-  background-image: url("../img/colegio1.jpg");
+  background-image: url("../img/colegio/colegio-panoramica.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .navegacion .tituloYescudo {
@@ -76,10 +77,17 @@ body.dark .navegacion .tituloYescudo h1 {
   font-family: "fuente2";
   height: 40px;
   background-color: rgba(250, 250, 250, 0.7);
-  text-align: right;
+  text-align: left;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  top: 0px;
+  position: fixed;
+  z-index: 10000;
 }
 
 body.dark .navegacion .nav {
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   background-color: rgba(10, 10, 10, 0.5);
 }
 
@@ -123,6 +131,8 @@ body.dark .navegacion .nav {
   display: -ms-flexbox;
   display: flex;
   outline: none;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 .navegacion ul li .switch::after {
@@ -136,8 +146,8 @@ body.dark .navegacion .nav {
   left: 0px;
   right: unset;
   border-radius: 100px;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -163,12 +173,16 @@ body.dark .navegacion .nav {
 
 .informacion {
   padding: 40px;
-  height: 640px;
+  height: 660px;
   background-color: #FF4D00;
   position: relative;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 body.dark .informacion {
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   background-color: #003EFF;
 }
 
@@ -178,11 +192,13 @@ body.dark .informacion {
   width: 70%;
   font-size: 20px;
   position: absolute;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 body.dark .informacion .texto {
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   background-color: rgba(10, 10, 10, 0.4);
   color: #F4F6F7;
 }
@@ -192,8 +208,8 @@ body.dark .informacion .texto:hover {
 }
 
 .informacion .texto:hover {
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   background-color: rgba(250, 250, 250, 0.8);
@@ -223,8 +239,8 @@ body.dark .informacion .texto:hover {
   width: 70%;
   font-size: 20px;
   position: absolute;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
 }
 
 body.dark .informacion .texto-rigt {
@@ -237,8 +253,8 @@ body.dark .informacion .texto-rigt:hover {
 }
 
 .informacion .texto-rigt:hover {
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   background-color: rgba(250, 250, 250, 0.8);
@@ -258,6 +274,43 @@ body.dark .informacion .texto-rigt:hover {
 .informacion .texto-rigt img {
   width: 400px;
   float: right;
+}
+
+.carrusel {
+  top: 30px;
+  background-image: url("../img/colegio/balcon-patio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.carrusel::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #F4F6F7;
+  position: absolute;
+  opacity: 0.6;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+body.dark .carrusel::before {
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.carrusel .box-carrusel-nosotros {
+  width: 70%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px black;
+  z-index: 100;
 }
 
 .tarjetas {
@@ -302,16 +355,15 @@ body.dark .tarjetas {
 
 body {
   scroll-behavior: smooth;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   background: #F4F6F7;
-  transition: 0.3s ease all;
+  transition: 0.5s ease all;
 }
 
 body.dark {
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-  opacity: 0.7;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
   background: #000;
 }
 /*# sourceMappingURL=style.css.map */

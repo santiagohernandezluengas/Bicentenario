@@ -19,7 +19,6 @@ body{
     transition: $tiempo;
     &.dark {
         transition: $tiempo;
-        opacity: 0.7;
         background: #000;
     }
 }

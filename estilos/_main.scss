@@ -1,9 +1,11 @@
 .informacion {
     padding: 40px;
-    height: 640px;
+    height: 660px;
     background-color: $naranja;
     position: relative;
+    transition: $tiempo;
     body.dark & {
+        transition: $tiempo;
         background-color: $azul;
     }
     .texto {
@@ -14,6 +16,7 @@
         position: absolute;
         transition: $tiempo;
         body.dark & {
+            transition: $tiempo;
             background-color: rgba(10, 10, 10, 0.4);
             color: $blanco;
             &:hover{
@@ -75,7 +78,35 @@
         }
     }
 }
-
+.carrusel{
+    top: 30px;
+    background-image: url("../img/colegio/balcon-patio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: $blanco;
+        position: absolute;
+        opacity: 0.6;
+        transition: $tiempo;
+        body.dark &{
+            transition: $tiempo;
+            background-color: #000;
+            opacity: 0.6;
+        }
+    }
+    .box-carrusel-nosotros{
+        width: 70%;
+        margin: auto;
+        align-items: center;
+        border: solid 1px black;
+        z-index: 100;
+    }
+}
 
 .tarjetas {
     background-color: $azul;
