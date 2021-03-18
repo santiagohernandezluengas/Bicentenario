@@ -31,10 +31,8 @@
                             </button>
                         </li>
                         <li><a href="../index.html"><span class="icon-home icon"></span></a></li>
-                        <li><a href="#colegio">Acerca del colegio</a></li>
-                        <li><a href="#sedes">Sedes</a></li>
-                        <li><a href="forms/formulario-reg.html" class="btn-nav">Registro</a></li>
-                        <li><a href="#" class="btn-nav">Iniciar sesión</a></li>
+                        <li><a href="formulario-reg.html" class="btn-nav">Registro</a></li>
+                        <li><a href="formulario-log.html" class="btn-nav">Iniciar sesión</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,38 +40,66 @@
     </header>
     <!--Fin del header-->
     <!--Comienzo del main-->
-    <main>
-        <form action="">
+    <main class="main">
+        <form action="" class="formulario">
             <div class="contenedor">
-                <label for="nombre">Nombre <span class="asterisco">*</span></label>
+                <label for="nombre">Nombre:<span class="asterisco">* </span></label>
                 <input type="text" id="nombre" name="NameUsuario" placeholder="Nombre..." tabindex="1" required>
             </div>
-            
+
             <div class="contenedor">
-                <label for="apellido">Apellido<span class="asterisco">*</span></label>
+                <label for="apellido">Apellido:<span class="asterisco">*</span></label>
                 <input type="text" id="apellido" name="LastNameUsuario" placeholder="Apellido..." tabindex="2" required>
             </div>
             <div class="contenedor">
-                <label for="email">E-Mail<span class="asterisco">*</span></label>
-                <input type="email" id="email" name="correoUsuario" placeholder="ej@ejemplo.com" tabindex="2" required>
+                <label for="#sexo">Sexo:<span class="asterisco">* </span></label>
+                <select name="sexoUsuario" id="Sexo" tabindex="3" required>
+                    <option value="0">---------</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                </select>
             </div>
             <div class="contenedor">
-                <label for="password">Contraseña<span class="asterisco">*</span></label>
-                <input type="password" id="password" name="contraseñaUsuario" placeholder="***" pattern="[A-Z]{1}[0-9]" tabindex="2" required>
+                <label for="email">E-Mail:<span class="asterisco">*</span></label>
+                <input type="email" id="email" name="correoUsuario" placeholder="ej@ejemplo.com" tabindex="4" required>
             </div>
             <div class="contenedor">
-                <label for="passwordConfirm">confirmar contraseña<span class="asterisco">*</span></label>
-                <input type="password" id="passwordConfirm" name="confirmContraseñaUsuario" placeholder="***" pattern="[A-Z]{1}[0-9]" tabindex="2" required>
+                <label for="password">Contraseña:<span class="asterisco">*</span></label>
+                <input type="password" id="password" name="contraseñaUsuario" placeholder="Crea una contraseña fuerte"
+                    tabindex="5" required>
             </div>
+            <div class="contenedor">
+                <label for="passwordConfirm">confirmar contraseña:<span class="asterisco">*</span></label>
+                <input type="password" id="passwordConfirm" name="confirmContraseñaUsuario" placeholder="Verifica tu contraseña creada"
+                   tabindex="6" required>
+            </div>
+            <input type="submit" class="submit" value="Enviar"  onclick="verifiPass()" onclick="confirmar_contraseña()">
         </form>
     </main>
     <!--Fin del main-->
     <!--Comienzo del footer-->
-    <footer></footer>
+    <footer>
+        <div class="footer">
+            <div class="texto">
+                <div class="redes">
+                    <a href="#"><span class="icon-facebook icon-f"></span></a>
+                    <a href="#"> <span class="icon-telegram icon-f"></span></a>
+                    <a href="#"><span class="icon-instagram icon-f"></span></a>
+                </div>
+                <div class="legend">
+                    <span>Lorem ipsum dolor, sit amet consectetur </span>
+                    <span>Derechos reservados ©</span>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!--Fin del footer-->
     <!--Scripts-->
     <script src="../js/dark-mode.js"></script>
     <script src="../js/bloqueo.js"></script>
+    <script src="../js/contraseñas.js"></script>
+    <script src="../js/funciones.js"></script>
     <!--fin de Scripts-->
 </body>
 

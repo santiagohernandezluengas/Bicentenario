@@ -59,7 +59,7 @@
   top: 60px;
   left: 180px;
   font-size: 60px;
-  font-family: "fuente2";
+  font-family: "Times New Roman";
 }
 
 body.dark .navegacion .tituloYescudo h1 {
@@ -74,21 +74,19 @@ body.dark .navegacion .tituloYescudo h1 {
   right: 0px;
   bottom: 0px;
   font-size: 12px;
-  font-family: "fuente2";
+  font-family: "Times New Roman";
   height: 40px;
   background-color: rgba(250, 250, 250, 0.7);
   text-align: left;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
-  top: 0px;
-  position: fixed;
   z-index: 10000;
 }
 
 body.dark .navegacion .nav {
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(10, 10, 10, 0.7);
 }
 
 .navegacion ul li {
@@ -111,6 +109,14 @@ body.dark .navegacion .nav {
   color: #FF4D00;
 }
 
+body.dark .navegacion ul li a {
+  color: #FF4D00;
+}
+
+body.dark .navegacion ul li a:hover {
+  color: #003EFF;
+}
+
 .navegacion ul li button {
   background: none;
   font-size: 17px;
@@ -119,6 +125,14 @@ body.dark .navegacion .nav {
 
 .navegacion ul li button:hover {
   color: #FF4D00;
+}
+
+body.dark .navegacion ul li button {
+  color: #FF4D00;
+}
+
+body.dark .navegacion ul li button:hover {
+  color: #003EFF;
 }
 
 .navegacion ul li .switch {
@@ -187,6 +201,7 @@ body.dark .informacion {
 }
 
 .informacion .texto {
+  opacity: 0.7;
   padding: 10px;
   background-color: rgba(250, 250, 250, 0.5);
   width: 70%;
@@ -194,6 +209,11 @@ body.dark .informacion {
   position: absolute;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
+}
+
+.informacion .texto h2 {
+  width: 50%;
+  position: absolute;
 }
 
 body.dark .informacion .texto {
@@ -208,6 +228,7 @@ body.dark .informacion .texto:hover {
 }
 
 .informacion .texto:hover {
+  opacity: 1;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
   -webkit-transform: scale(1.05);
@@ -221,17 +242,13 @@ body.dark .informacion .texto:hover {
   top: 35px;
 }
 
-.informacion .texto h2 {
-  width: 50%;
-  position: absolute;
-}
-
 .informacion .texto img {
   width: 400px;
   float: right;
 }
 
 .informacion .texto-rigt {
+  opacity: 0.7;
   top: 350px;
   right: 40px;
   padding: 10px;
@@ -241,6 +258,11 @@ body.dark .informacion .texto:hover {
   position: absolute;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
+}
+
+.informacion .texto-rigt h2 {
+  width: 50%;
+  position: absolute;
 }
 
 body.dark .informacion .texto-rigt {
@@ -253,6 +275,7 @@ body.dark .informacion .texto-rigt:hover {
 }
 
 .informacion .texto-rigt:hover {
+  opacity: 1;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
   -webkit-transform: scale(1.05);
@@ -277,7 +300,6 @@ body.dark .informacion .texto-rigt:hover {
 }
 
 .carrusel {
-  top: 30px;
   background-image: url("../img/colegio/balcon-patio.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -304,6 +326,7 @@ body.dark .carrusel::before {
 }
 
 .carrusel .box-carrusel-nosotros {
+  padding: 10px;
   width: 70%;
   margin: auto;
   -webkit-box-align: center;
@@ -311,6 +334,7 @@ body.dark .carrusel::before {
           align-items: center;
   border: solid 1px black;
   z-index: 100;
+  border: none;
 }
 
 .tarjetas {
@@ -334,14 +358,102 @@ body.dark .tarjetas {
 .footer {
   background-color: gray;
   height: 45px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+}
+
+.footer a {
+  color: #cacaca;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #FF4D00;
+}
+
+body.dark .footer a {
+  color: #cacaca;
+}
+
+body.dark .footer a:hover {
+  color: #003EFF;
 }
 
 .footer .legend {
+  background-color: #242424;
+  color: #ffffff;
   text-align: center;
   top: 10px;
   font-size: 20px;
+  height: 40px;
+}
+
+.footer .icon-f {
+  margin: 5px 5px 5px 5px;
+  font-size: 20px;
+}
+
+.main {
+  height: 550px;
+  background-image: url("../img/colegio/salon-biblioteca-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 100px 0px;
+}
+
+.main .formulario {
+  font-size: 20px;
+  background-color: #afaeae;
+  width: 25%;
+  min-width: 350px;
+  margin: auto;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+.main .formulario .asterisco {
+  color: #da0303;
+}
+
+.main .formulario .contenedor {
+  margin-top: 15px;
+}
+
+.main .formulario .contenedor label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .formulario select {
+  width: 68%;
+  background-color: #afaeae;
+  border-bottom: 2px solid black;
+}
+
+.main .formulario select .asterisco {
+  color: #da0303;
+}
+
+.main .formulario input {
+  width: 95%;
+  height: 25px;
+  background-color: #afaeae;
+  border-bottom: 2px solid black;
+}
+
+.main .formulario input[type="submit"] {
+  border-radius: 50px;
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #003EFF;
+  -webkit-transition: .8s ease all;
+  transition: .8s ease all;
+}
+
+.main .formulario input[type="submit"]:hover {
+  background-color: #FF4D00;
+  color: #F4F6F7;
+  -webkit-transition: .8s ease all;
+  transition: .8s ease all;
 }
 
 * {

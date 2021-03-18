@@ -1,11 +1,29 @@
 .footer{
+    a{
+        color: rgb(202, 202, 202);
+        text-decoration: none;
+        &:hover{
+            color: $naranja;
+        }
+        body.dark & {
+            color: rgb(202, 202, 202);
+            &:hover{
+                color: $azul;
+            }
+        }
+    }
     background-color: gray;
     height: 45px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     .legend{
+        background-color: #242424;
+        color: #ffffff;
         text-align: center;
         top: 10px;
+        font-size: 20px;
+        height: 40px;
+    }
+    .icon-f{
+        margin: 5px 5px 5px 5px;
         font-size: 20px;
     }
 }

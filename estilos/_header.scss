@@ -30,7 +30,7 @@
             top: 60px;
             left: 180px;
             font-size: 60px;
-            font-family: "fuente2";
+            font-family: $titulos;
             body.dark & {
                 color: #fff;
             }
@@ -44,17 +44,15 @@
         right: 0px;
         bottom: 0px;
         font-size: 12px;
-        font-family: "fuente2";
+        font-family: $titulos;
         height: 40px;
         background-color: rgba(250, 250, 250, 0.7);
         text-align: left;
         transition: $tiempo;
-        top: 0px;
-        position: fixed;
         z-index: 10000;
         body.dark & {
             transition: $tiempo;
-            background-color: rgba(10, 10, 10, 0.5);
+            background-color: rgba(10, 10, 10, 0.7);
         }
     }
     ul {
@@ -71,6 +69,12 @@
                 &:hover {
                     color: $naranja;
                 }
+                body.dark & {
+                    color: $naranja;
+                    &:hover{
+                        color: $azul;
+                    }
+                }
             }
             button {
                 background: none;
@@ -78,6 +82,12 @@
                 font-family: "fuente2";
                 &:hover {
                     color: $naranja;
+                }
+                body.dark & {
+                    color: $naranja;
+                    &:hover{
+                        color: $azul;
+                    }
                 }
             }
             .switch {
