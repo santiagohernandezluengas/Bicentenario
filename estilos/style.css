@@ -392,13 +392,13 @@ body.dark .footer a:hover {
 }
 
 .main {
-  height: 550px;
+  height: 590px;
   background-image: url("../img/colegio/salon-biblioteca-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 
 .main .formulario {
@@ -440,6 +440,10 @@ body.dark .footer a:hover {
   border-bottom: 2px solid black;
 }
 
+.main .formulario select {
+  width: 95%;
+}
+
 .main .formulario input[type="submit"] {
   border-radius: 50px;
   font-size: 15px;
@@ -454,6 +458,82 @@ body.dark .footer a:hover {
   color: #F4F6F7;
   -webkit-transition: .8s ease all;
   transition: .8s ease all;
+}
+
+.sesion {
+  background-image: url("../img/colegio/mural-uniminuto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.sesion .con-sup {
+  width: 50%;
+  min-width: 243px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sesion .con-sup .datos-img {
+  width: 100%;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sesion .con-sup .datos-img .imagen {
+  width: 50%;
+}
+
+.sesion .con-sup .datos-img .imagen .img-usu {
+  width: 80%;
+  min-width: 220px;
+}
+
+.sesion .con-sup .datos-img .datos {
+  width: 50%;
+}
+
+.sesion .con-sup .datos-img .datos ul {
+  margin-top: 40px;
+  list-style: none;
+}
+
+.sesion .con-sup .datos-img .datos ul li {
+  font-size: 20px;
+}
+
+.sesion .con-sup .comentarios {
+  width: 100%;
+}
+
+.sesion .con-sup .comentarios .comentUsuario {
+  width: 100%;
+}
+
+.sesion .con-sup .btn-enviar {
+  width: 10%;
+  height: 20px;
+  min-width: 210px;
+  background-color: #0062f9;
+  color: #000000;
+  -webkit-transition: 0.5 ease all;
+  transition: 0.5 ease all;
+}
+
+.sesion .con-sup .btn-enviar:hover {
+  background-color: #FF4D00;
+  -webkit-transition: 0.5 ease all;
+  transition: 0.5 ease all;
+  color: #ffffff;
 }
 
 * {

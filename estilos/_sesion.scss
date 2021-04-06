@@ -1,0 +1,57 @@
+.sesion {
+    background-image: url("../img/colegio/mural-uniminuto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    .con-sup {
+        width: 50%;
+        min-width: 243px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        .datos-img {
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            .imagen {
+                width: 50%;
+                .img-usu {
+                    width: 80%;
+                    min-width: 220px;
+                }
+            }
+            .datos {
+                width: 50%;
+                ul {
+                    margin-top: 40px;
+                    list-style: none;
+                    li {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .comentarios {
+            width: 100%;
+            .comentUsuario {
+                width: 100%;
+            }
+        }
+        .btn-enviar {
+            width: 10%;
+            height: 20px;
+            min-width: 210px;
+            background-color: #0062f9;
+            color: #000000;
+            transition: 0.5 ease all;
+            &:hover {
+                background-color: $naranja;
+                transition: 0.5 ease all;
+                color: #ffffff;
+            }
+        }
+    }
+}

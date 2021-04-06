@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/registro.png">
-    <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="stylesheet" href="../img/iconos/fonts/style.css">
+    <link rel="icon" href="img/registro.png">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="img/iconos/fonts/style.css">
     <title>Registro</title>
 </head>
 
@@ -17,7 +17,7 @@
         <section class="navegacion">
             <div class="tituloYescudo">
                 <div class="escudo">
-                    <img src="../img/Logo.png" alt="colegio-escudo">
+                    <img src="img/Logo.png" alt="colegio-escudo">
                 </div>
                 <h1>IET Bicentenario</h1>
             </div>
@@ -30,7 +30,7 @@
                                 <span class="icon-moon icon"></span>
                             </button>
                         </li>
-                        <li><a href="../index.html"><span class="icon-home icon"></span></a></li>
+                        <li><a href="index.html"><span class="icon-home icon"></span></a></li>
                         <li><a href="formulario-reg.html" class="btn-nav">Registro</a></li>
                         <li><a href="formulario-log.html" class="btn-nav">Iniciar sesión</a></li>
                     </ul>
@@ -43,17 +43,18 @@
     <main class="main">
         <form action="" class="formulario">
             <div class="contenedor">
-                <label for="nombre">Nombre:<span class="asterisco">* </span></label>
-                <input type="text" id="nombre" name="NameUsuario" placeholder="Nombre..." tabindex="1" required>
+                <label for="nombre">Nombre:<span class="asterisco">
+                    * </span></label>
+                <input type="text" id="nombre" name="NameUsuario" placeholder="Nombre(s)" tabindex="1" required>
             </div>
 
             <div class="contenedor">
                 <label for="apellido">Apellido:<span class="asterisco">*</span></label>
-                <input type="text" id="apellido" name="LastNameUsuario" placeholder="Apellido..." tabindex="2" required>
+                <input type="text" id="apellido" name="LastNameUsuario" placeholder="Apellido(s)" tabindex="2" required>
             </div>
             <div class="contenedor">
-                <label for="#sexo">Sexo:<span class="asterisco">* </span></label>
-                <select name="sexoUsuario" id="Sexo" tabindex="3" required>
+                <label for="sexo">Sexo:<span class="asterisco">* </span></label>
+                <select name="sexoUsuario" id="sexo" tabindex="3" required>
                     <option value="0">---------</option>
                     <option value="1">Masculino</option>
                     <option value="2">Femenino</option>
@@ -61,20 +62,31 @@
                 </select>
             </div>
             <div class="contenedor">
+                <label for="tipoUsuario">Tipo de usuario:<span class="asterisco">*</span></label>
+                <select name="tipoUsuario" id="tipoUsuario" tabindex="4">
+                    <option value="0">---------</option>
+                    <option value="1">Padre</option>
+                    <option value="2">Madre</option>
+                    <option value="3">Estudiante</option>
+                    <option value="4">Acudiente</option>
+                </select>
+            </div>
+            <div class="contenedor">
                 <label for="email">E-Mail:<span class="asterisco">*</span></label>
-                <input type="email" id="email" name="correoUsuario" placeholder="ej@ejemplo.com" tabindex="4" required>
+                <input type="email" id="email" name="correoUsuario" placeholder="ej@ejemplo.com" tabindex="5" required>
             </div>
             <div class="contenedor">
                 <label for="password">Contraseña:<span class="asterisco">*</span></label>
-                <input type="password" id="password" name="contraseñaUsuario" placeholder="Crea una contraseña fuerte"
-                    tabindex="5" required>
+                <input type="password" id="password" name="contrasenaUsuario" placeholder="Crea una contraseña fuerte"
+                    tabindex="6" required>
             </div>
             <div class="contenedor">
-                <label for="passwordConfirm">confirmar contraseña:<span class="asterisco">*</span></label>
-                <input type="password" id="passwordConfirm" name="confirmContraseñaUsuario" placeholder="Verifica tu contraseña creada"
-                   tabindex="6" required>
+                <label for="passwordConfirm">Confirmar contraseña:<span class="asterisco">*</span></label>
+                <input type="password" id="passwordConfirm" name="confirmContrasenaUsuario" placeholder="Verifica tu contraseña creada"
+                   tabindex="7" required>
             </div>
-            <input type="submit" class="submit" value="Enviar"  onclick="verifiPass()" onclick="confirmar_contraseña()">
+            <input type="submit" class="submit" value="Enviar"  onclick="verifiPass()" onclick="confirmar_contrasena(a)"
+            tabindex="8">
         </form>
     </main>
     <!--Fin del main-->
@@ -96,10 +108,10 @@
     </footer>
     <!--Fin del footer-->
     <!--Scripts-->
-    <script src="../js/dark-mode.js"></script>
-    <script src="../js/bloqueo.js"></script>
-    <script src="../js/contraseñas.js"></script>
-    <script src="../js/funciones.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/bloqueo.js"></script>
+    <script src="js/contrasenas.js"></script>
+    <script src="js/funciones.js"></script>
     <!--fin de Scripts-->
 </body>
 

@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../img/candado.png">
-    <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="stylesheet" href="../img/iconos/fonts/style.css">
+    <link rel="icon" href="img/usuario_2.png">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="img/iconos/fonts/style.css">
     <title>Login</title>
 </head>
+
 <body>
     <!--Comienzo del header-->
     <header>
         <section class="navegacion">
             <div class="tituloYescudo">
                 <div class="escudo">
-                    <img src="../img/Logo.png" alt="colegio-escudo">
+                    <img src="img/Logo.png" alt="colegio-escudo">
                 </div>
                 <h1>IET Bicentenario</h1>
             </div>
@@ -28,7 +30,7 @@
                                 <span class="icon-moon icon"></span>
                             </button>
                         </li>
-                        <li><a href="../index.html"><span class="icon-home icon"></span></a></li>
+                        <li><a href="index.html"><span class="icon-home icon"></span></a></li>
                         <li><a href="formulario-reg.html" class="btn-nav">Registro</a></li>
                         <li><a href="formulario-log.html" class="btn-nav">Iniciar sesión</a></li>
                     </ul>
@@ -40,18 +42,20 @@
     <!--Comienzo del main-->
     <main class="main">
         <form action="" class="formulario">
-            
+
             <div class="contenedor">
-                <label for="email"><img style="width: 40px;" src="../img/usuario.png" alt="usuario"></label>
-                <input type="email" id="email" name="correoUsuario" placeholder="Correo electronico" tabindex="4" required>
+                <label for="email"><img style="width: 40px;" src="img/usuario.png" alt="usuario"></label>
+                <input type="email" id="email" name="correoUsuario" placeholder="Correo electronico" tabindex="4"
+                    required>
             </div>
             <div class="contenedor">
-                <label for="password"><img style="width: 40px;" src="../img/candado.png" alt="bloqueo"></label>
-                <input type="password" id="password" name="contraseñaUsuario" placeholder="Contraseña"
-                    tabindex="5" required>
+                <label for="password"><img style="width: 40px;" src="img/candado.png" alt="bloqueo"></label>
+                <input type="password" id="password" name="contraseñaUsuario" placeholder="Contraseña" tabindex="5"
+                    required>
             </div>
-            
-            <input type="submit" class="submit" value="Enviar"  onclick="verifiPass()" onclick="confirmar_contraseña()">
+
+            <input type="submit" class="submit" value="Enviar" onclick="verifiPass()" onclick="confirmar_contraseña()">
+            <a href="sesion.html">sesion</a>
         </form>
     </main>
     <!--Fin del main-->
@@ -73,10 +77,11 @@
     </footer>
     <!--Fin del footer-->
     <!--Scripts-->
-    <script src="../js/dark-mode.js"></script>
-    <script src="../js/bloqueo.js"></script>
-    <script src="../js/contraseñas.js"></script>
-    <script src="../js/funciones.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/bloqueo.js"></script>
+    <script src="js/contraseñas.js"></script>
+    <script src="js/funciones.js"></script>
     <!--fin de Scripts-->
 </body>
+
 </html>
