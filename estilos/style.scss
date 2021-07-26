@@ -17,7 +17,6 @@ body{
     scroll-behavior: smooth;
     transition: $tiempo;
     background: $blanco;
-    transition: $tiempo;
     &.dark {
         transition: $tiempo;
         background: #000;
